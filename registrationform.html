@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr size="5" color="orange">
+    <h2 align="center" style="color:blue">Generate Form</h2>
+    <hr size="5" color="green">
+    <form method="get" action="#" target="_blank"> 
+        <fieldset>
+            <legend align="center"><h2>Registration for course</h2></legend>
+            <label>FIRST NAME : <input type="text" placeholder="enter your name" maxlength="10"></label>
+            <label>LAST NAME : <input type="text" placeholder="enter your name" maxlength="10"></label>
+            <br>
+            <br>
+            <label>PASSWORD : <input type="password" placeholder="enter your six digit password" maxlength="6"></label>
+            <br>
+            <br>
+            <label>D.O.B : <input type="date"></label>
+            <br>
+            <br>
+            <label>GENDER : <input type="radio" name="gen" checked></label>MALE
+            <input type="radio" value="FEMALE" name="gen"</label>FEMALE
+            <br>
+            <br>
+            <label>SUBJECT OF SELECTION : <input type="checkbox">FSD-1  <input type="checkbox">DE <input type="checkbox">PYTHON </label>
+            <br>
+            <br>
+            <label>CITY : <select><option value selected disable hidden>--CITY--</option>
+            <optgroup label="GUJARAT">
+                <option>AHEMDABAD</option>
+                <option>BARODA</option>
+                <option>ANAND</option>
+            </optgroup>
+            <optgroup label="RAJASTHAN">
+                <option>UDAIPUR</option>
+                <option>JAIPUR</option>
+                <option>JESALAMER</option>
+            </optgroup>
+        </select></label>
+        <br>
+        <br>
+        <label>SEMESTER <select><option value selected disable hidden>SEM</option>
+        <option>1</option>
+    <option>3</option>
+          <option>5</option></select></label>
+          <br>
+          <br>
+          <label>UPLOAD CV : <input type="file" accept=".pdf,.doc" multiple></label>
+          <br>
+          <br>
+          <label>SUBMIT :<input type="submit">
+          <input type="reset"></label>
+          <br>
+          <br>
+
+          <input type="button" value="NEXT PAGE">
+        </fieldset>
+    </form>
+</body>
+</html>
