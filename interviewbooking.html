@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <h2 align="center">INTERVIEW BOOKING & PERSONAL DETAILS FORM</h2>
+        <label>NAME :</label>
+        <input type="text" placeholder="ENTER YOUR FULL NAME">
+        <br>
+        <br>
+        <label>EMAIL :</label>
+        <input type="email" placeholder="ENTER YOUR EMAIL">
+        <br>
+        <br>
+        <label>GENDER :</label>
+        <input type="radio" name="gen" value="male">MALE
+        <input type="radio" name="gen" value="female">FEMALE
+        <input type="radio" name="gen" value="other">OTHER
+        <br>
+        <br>
+        <label>YOUR HOBBIES :</label>
+        <input type="checkbox" name="hobby" value="reading">READING
+        <input type="checkbox" name="hobby" value="TREAVELING">TREAVELING
+        <input type="checkbox" name="hobby" value="GAMING">GAMING
+        <input type="checkbox" name="hobby" value="music">MUSIC
+        <br>
+        <br>
+        <label>SELECT DATE FOR INTERVIEW :</label>
+        <input type="date" min="2025-09-28" max="2025-10-03">
+        <br>
+        <br>
+        <label>SELECT TIME FOR INTERVIEW</label>
+        <input type="time" min="09:00" max="16:00">
+        <br>
+        <br>
+        <label for="city">CHOOSE YOUR CITY :</label>
+        <input list="cities" id="city" name="city" placeholder="ENTER OR SELECT YOUR CITY">
+        <datalist id="cities">
+            <option>AHEMDABAD</option>
+            <optgroup>GANDHINAGAR</optgroup>
+            <option>VADODARA</option>
+            <option>PUNE</option>
+        </datalist>
+        <br>
+        <br>
+        <label>SELECT DEPARTMENT :</label>
+        <select id="dep" name="DEPARTMENT">
+            <optgroup label="ENGINEERING">
+                <option value="SOFTWARE">SOFTWARE</option>
+                <option value="civil">CIVIL</option>
+            </optgroup>
+            <optgroup label="MANAGEMENT">
+                <option value="HR">HR</option>
+                <option value="FINANCE">FINANCE</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <label for="coments">ADDITIONAL COMMENTS :</label>
+        <br>
+        <textarea rows="4" cols="20" id="coments" name="coments" placeholder="ENTER YOUR COMMENT HERE..."></textarea>
+        <br>
+        <br>
+        <button type="submit">SUBMIT FORM</button>
+    </form>
+</body>
+</html>
