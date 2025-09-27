@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form With Color and Range Inputs</h1>
+    <form>
+        <label>Choose your favorite color</label>
+        <input type="color" id="color" name="favcol" value="#0b6efd" oninput="colorPreview.style.backgroundColor = this.value">
+        <br>
+        <div id="colorPreview" style="background-color: rgb(25,64,118);">Your color will appear here!</div>
+        <br>
+        <label for="volume"> SELECT VOLUME :</label>
+        <input type="range" id="value" name="volume" min="0" max="100" value="50" oninput="volumeValue.textContent = this.value">
+        <br>
+        <br>
+        <button value="submit">SUBMIT</button>
+
+
+
+    </form>
+</body>
+</html>
+
