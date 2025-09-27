@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr size="5" color="orange">
+    <font color="blue" align="center"><h2>FOOD REVIEW</h2></font>
+    <hr size="5" color="green">
+    <form  method="get" action="#">
+        <fieldset>
+            <legend>Customer Details</legend>
+        <table>
+            <tbody>
+            <tr>
+                <th>NAME : </th>
+                    <td><input type="text" placeholder="enter your name"> </td>
+            </tr>
+            <tr>
+                <th>NUMBER :</th>
+                <td><input type="tel"  min="10" max="10" placeholder="enter your mobile number"></td>
+            </tr>
+            <tr>
+                <th>EMAIL :</th>
+                <td><input type="email" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <th>PIZZA NAME :</th>
+                <td><input type="checkbox">SIMPLE VEG</td>
+                <br>
+                <td><input type="checkbox">7 CHEEZE</td>
+            </tr>
+            <tr>
+                <th>OUTLET CITY</th>
+                <td>
+                <select>
+                    <option value="List of area" selected hidden >--List of area--</option>
+                    <option value="AHEMDABAD">AHEMDABAD</option>
+                    <option value="GANDHINAGAR">GANDHINAGAR</option>
+                    <option value="BARODA">BARODA</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <th>ORDER DATE :</th>
+                <td><input type="date" ></td>
+            </tr>
+            <tr>
+                <th>COMMENT :</th>
+                <td>
+                    <textarea rows="5" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                </tbody>
+        </table>
+        </fieldset>
+        <fieldset>
+            <legend>Scale ordered pizza</legend>
+            <table rules="all">
+                <tbody>
+                    <tr>
+                    <th>SCALE</th>
+                    <th>GOOD</th>
+                    <th>AVG</th>
+                    <th>BAD</th>
+                    </tr>
+                    <tr>
+                        <th>QUALITY</th>
+                        <th><input type="radio" id="QUALITY" value="good"></th>
+                        <th><input type="radio" id="QUALITY" value="avg"></th>
+                        <th><input type="radio" id="QUALITY" value="bad"></th>
+                    </tr>
+                    <tr>
+                        <th>QUANTITY</th>
+                        <th><input type="radio" id="QUANTITY" value="good"></th>
+                        <th><input type="radio" id="QUANTITY" value="avg"></th>
+                        <th><input type="radio" id="QUANTITY" value="bad"></th>
+                    </tr>
+                    <tr>
+                        <th>FRESHNESS</th>
+                        <th><input type="radio" id="FRESHNESS" value="good"></th>
+                        <th><input type="radio" id="FRESHNESS" value="avg"></th>
+                        <th><input type="radio" id="FRESHNESS" value="bad"></th>
+                    </tr>
+                    <tr>
+                        <th>OVERALL RATING</th>
+                        <td colspan="3"><input type="range" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center"><input type="submit" value="submit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
