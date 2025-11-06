@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            grid-template-rows: auto 1fr auto;
+            gap: 20px;
+        }
+        header{
+            color: white;
+            background-color: rgb(62, 95, 193);
+            text-align: center;}
+        
+
+        nav {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 25px;
+            }
+        a:hover{background-color: cyan;}
+        header, nav, footer { grid-column: 1 / 4; }
+
+        .box{
+            border-radius: 10px;
+            background-color:rgb(188, 228, 241);
+        }
+        .box1{
+            background: cyan;
+            border-radius: 10px;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3;
+            
+        }
+        .box1:hover{background-color: blue;}
+
+
+        .z{
+            gap: 10px;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px 1fr));
+            margin-top: 15px;
+        }
+
+
+        .ab{
+            color: white;
+            height: 30px;
+            background-color: blue;
+            text-align: center;
+            font-weight: bold;
+        }
+        .xy{
+            background-color: rgb(158, 183, 191);
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>🌐 The Daily Grid — News & Insights</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">World</a>
+            <a href="#">Tech</a>
+            <a href="#">Sports</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Contact</a>
+
+        </nav>
+        <div class="container">
+            <div class="box">
+                <ul>
+                    <h1>🗂 Categories</h1>
+                    <li>Technology</li>
+                    <li>Health</li>
+                    <li>Business</li>
+                    <li>Travel</li>
+                    <li>Sports</li>
+                </ul>
+            </div>
+            <div>
+                <h1>📢 Today's Top Story</h1>
+                <p>CSS Grid and Flexbox make it simple to create responsive, professional web layouts. With just a few properties, you can design pages that adapt beautifully to any screen size.</p>
+                <div class="z">
+                <div class="box1">Ai inovation</div>
+                <div class="box1">Ai inovation</div>
+                <div class="box1">Ai inovation</div>
+                <div class="box1">Ai inovation</div>
+                </div>
+            </div>
+            <div class="xy">
+                <h1>🔥 Trending Now</h1>
+                <p>Top articles from around the world, updated hourly.</p>
+                <ul>
+                    <li>SpaceX launches new mission</li>
+                    <li>AI transforms education</li>
+                    <li>Sports stars unite for charity</li>
+                </ul>
+            </div>
+            
+        <footer>
+            <h3 class="ab">© 2025  — All rights reserved.</h3>
+        </footer>
+    
+
+</body>
+</html>
