@@ -1,46 +1,39 @@
+<!-- Write a function gradeStudents that takes an array of student objects (each with a name and FSD marks property).
+
+The function should:
+1. Iterate through the student array.
+2. For each student, it should use the prompt() pop-up box to ask the user to enter FSD marks. The prompt message should clearly state the student's name (e.g., "Enter FSD marks for Alice:").
+3. It should validate the user input. If the input is not a valid number (use isNaN()), display an alert() message "Invalid grade. Please enter a number." and continue to the next student without updating the current one.
+4. If the input is valid, update the student's FSD marks property with the new value.
+5.Finally, after the loop finishes, it should use alert() to display a summary of the FSD marks for all students in a clear, multi-line format using template literals. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task-2: Welcome to My Second Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-    <header>
-        <h1>Task-2: Welcome to My Second Page</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of my first semantic HTML page.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <article>
-                <p>Here you will learn about using semantic tags like</p>
-                <p>Tags like &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, and &lt;footer&gt; are called semantic tags.</p>
-                
-                <p><strong>Tip:</strong> Semantic tags improve SEO and accessibility!</p>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at Priyen Patel</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My First Semantic Page</p>
-    </footer>
-
+    <script>
+        let student=[{name:'Alice',marks:undefined},{name:'JACK',marks:undefined},{name:'ROY',marks:undefined},{name:'SMITH',marks:undefined},{name:'WILL',marks:undefined}]
+        for(let a in student){
+            m=parseInt(prompt("ENTER FSD MARKS FOR ",student[a].name))
+            if(isNaN(m)){
+                alert("Invalid Grade Please enter a number")
+                while(true){
+                    m=parseInt(prompt("ENTER FSD MARKS FOR ",student[a].name))
+                    if(isNaN(m)==false){
+                        break
+                    }
+                }
+        
+            }
+            else{
+                student[a].marks=m}
+        }
+        for(let b in student){
+            document.writeln("Student Name :"+student[b].name +" Marks : "+ student[b].marks+"<br>")
+        }
+    </script>
 </body>
 </html>
