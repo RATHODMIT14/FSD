@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for(let i=0;i<5;i++){
+            console.log(i)
+        }
+
+        let i=1
+        while(i<5){
+            console.log(i)
+            i++
+        }
+        var emp=['a','b','c']
+        for(let i=0;i<emp.length;i++){
+            console.log(emp[i])
+        }
+        var n=[1,2,3,4,5,6,7,8,9,10]
+        for(let i=0;i<n.length;i++){
+            document.writeln(n[i],'*','2','=',n[i]*2,'<br>')
+        }
+
+        let fruits=['a','b','c']
+        for (let f of fruits){
+            console.log(f)
+        }
+
+        let data=["abc",'PQR','xyz']
+        for(let d in data){
+            console.log(d)
+            console.log(data[d])
+        }
+
+        let obj={fname:'abc',lname:'pqr',age:23}
+        for (let o in obj){
+            console.log(o+" = ",obj[o])
+        }
+
+        var x=10
+        if(true){
+            var x=3
+        }
+        console.log(x)
+
+        var i1=5
+        for(var i1=0;i1<2;i1++)
+        {
+            console.log(i1)
+        }
+        console.log(i1)
+
+
+        let a=5
+        let b=a++
+        console.log(a)
+        console.log(b)
+
+        let c=++a
+        console.log(a)
+        console.log(c)
+
+        
+        let d=a--
+        console.log(a)
+        console.log(d)
+        console.log("---------")
+        let nums=[1,2,3,4]
+        let sqr=nums.map(num=>num*num)
+        console.log(sqr)
+        console.log(nums)
+
+        let age=[5,18,20,32]
+        let adult=age.filter(a=>a>=18)
+        console.log(adult)
+        console.log(age)
+
+        let uname=['a','b','c']
+        uname.forEach(a=>{console.log("Hello "+a)})
+    
+        let color=['red','green','yellow']
+        console.log(color.includes("green"))
+        console.log(color.includes("tomato"))
+
+        let user=[{id : 0 , name:'abc'},
+        {id:1,name:'pqr'},{id:2,name:'xyz'}
+        ]
+        let data1=user.find(u=>u.id===2)
+        console.log(data1)
+        console.log(user[1])
+        console.log(user[1].name)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

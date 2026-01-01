@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(){
+            document.writeln("ANS =",a+b)
+        }
+        function sub(){
+            document.writeln("ANS =",a-b)
+        }
+        function mul(){
+            document.writeln("ANS =",a*b)
+        }
+        function div(){
+            document.writeln("ANS =",a/b)
+        }
+        var a
+        var b
+        function c(){
+            a=parseInt(prompt("ENTER ONLY NUMBER "))
+            b=parseInt(prompt("ENTER NUMBER "))
+        }
+        c()
+    </script>
+    <p>SELECT FUNCTION</p>
+    <input type="button" value="+" onclick="add()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="mul()">
+    <input type="button" value="/" onclick="div()">
+</body>
+</html>
