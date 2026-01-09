@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="a">
+    <button onclick="fun1()">ADD IMAGE</button>
+    <p>I am outside div</p>
+    <div>
+        <p>I am Inside div</p>
+        <h4>I am heading</h4>
+    </div>
+    <button onclick="fun()">click</button>
+    <script>
+        function fun(){
+            let i=document.querySelectorAll("div p")
+            for(let p of i){
+                p.style.color="red"
+                p.style.textTransform="uppercase"
+            }
+        }
+        function fun1(){
+            let i=document.getElementById('a')
+            i.setAttribute("src",'i1.jpg')
+        }
+    </script>
+</body>
+</html>

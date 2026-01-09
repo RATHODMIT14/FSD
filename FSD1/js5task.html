@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- show alert with text enter something if input field is empty onclick submit button -->
+     <form name="form1" onsubmit="fun(this)">
+        Name :<input type="password" id="t1" name="fname">
+        <input type="submit">
+     </form>
+     <script>
+        function fun(e){
+            // var obj=document.form1.fname.value
+            var obj=e.t1.value
+            if(obj.length===0){
+                alert("ENTER YOUR NAME")
+                return false
+            }
+            alert(obj)
+        }
+     </script>
+
+     <form>
+        USER Name
+        <input type="text" id="t3">
+        ENTER PASSWORD
+        <input type="password" id="t2">
+        <input type="submit" onclick="fun1()">
+     </form>
+     <script>
+        //only letters minimun 1 letter is required
+        //design form in pass min len 8 and it must have some special char 
+        //w js to  validate uname and pass pas len nust be of 6-12 char uname should not start with _,@,and number both ther field must not be blank
+        function fun1(){
+            // pat=/^\d{10}$/  mobile no
+            // pat=/^[A-Za-z]{1}/ 
+            // pat=/\W+[A-Za-z]{8,}/
+            pat=/[A-Za-z0-9\W]{6,12}/
+            pat1=/^_|^@|^\d/
+            u=document.getElementById('t2').value
+            u1=document.getElementById('t3').value
+            if(pat.test(u)){
+                alert("Perfect  "+u)
+            }
+            else{
+                alert('Enter Peroper value')
+            }
+            if(pat1.test(u1)){
+                alert("Perfect  "+u1)
+            }
+            else{
+                alert('Enter Peroper value')
+            }
+        }
+     </script>
+</body>
+</html>

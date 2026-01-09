@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formed" onsubmit="fun()">
+        <input type="=text" name="fname" id="f1">
+        <input type="text" name="lname" id="l1">
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <script>
+        function fun(){
+            var obj=document.forms['formed']['fname'].value
+            // var obj=document.formed.fname.value
+            // var obj=document.getElementById('f1').value
+            var obj2=document.forms['formed']
+            alert(obj2.length)
+            alert("welcome "+obj)
+        }
+
+    </script>
+</body>
+</html>

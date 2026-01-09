@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function(){
+            alert("I am on page load")
+        })
+        ()
+
+        function fun(fname,lname){
+            document.writeln("Welcome "+fname+" "+lname)
+        }
+
+        function fun1(fname,lname){
+            var full=(fname+" "+lname)
+            return full
+        }
+        function hello(){
+            let r=fun1('a','b')
+            document.writeln(r)
+        }
+
+        
+       
+        
+    </script>
+    <input type="button" value="click me" onclick="fun('abc','xyz')">
+    <input type="button" value="click me1" onclick="hello()">
+
+    
+</body>
+</html>

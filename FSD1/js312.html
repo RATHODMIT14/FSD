@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onkeypress="fun3(event)">
+
+    <div onmousedown="fun4(event)" style="height: 100px;width: 100px;background-color: cyan"></div>
+    <select onchange="fun(event)">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+    </select>
+    
+    <script>
+        function fun4(e){
+            let val=e.button
+            switch(val){
+                case 0:alert("Left Click")
+                break
+                case 1:alert("Scroll Click")
+                break
+                case 2:alert("Right Click")
+                break
+            
+            }
+        }
+
+        function fun3(e){
+            alert("Key pressed "+e.keyCode)
+        }
+
+        function fun(e){
+            alert(e.target.value)
+            alert(e.type)
+            alert(e.target.tagName)
+        }
+        function fun5(e){
+            e.preventDefault()
+            alert("will not allow to submit")
+        }
+
+    </script>
+
+    <form action="i1.jpg" onsubmit="fun5(event)">
+        <input type="submit">
+    </form>
+</body>
+</html>

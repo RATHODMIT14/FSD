@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a" title="special case">ABC</p>
+    <p id="b">Hello</p>
+    <button onclick="fun()">Toggle</button>
+    <img src="i2.jpg" id="v" onclick="fun1()">
+    <button id="btn" onclick="zoom()" style="position: absolute;">Zoom in</button>
+    <script>
+        // document.getElementById('a').removeAttribute('title')
+        // alert(document.getElementById('a').getAttribute('title'))
+
+        let c=0
+        function fun(){
+            i=document.getElementById('b')
+            if(c==0){
+                i.style.color='tomato'
+                c=1
+            }
+            else{
+                i.style.color='black'
+                c=0
+            }
+        }
+
+        let k=0
+        function fun1(){
+            let i=document.getElementById('v')
+            if(k==0){
+                i.setAttribute("src","i1.jpg")
+                k=1
+            }
+            else{
+                i.setAttribute("src",'i2.jpg')
+                k=0
+            }
+        }
+
+        let z=0
+        function zoom(){
+            i=document.getElementById('v')
+            h=document.getElementById('btn')
+            if(z==0){
+                i.style.transform='scale(2)'
+                h.innerText="Zoom out"
+                z=1
+            }
+            else{
+                i.style.transform='scale(1)'
+                h.innerText="Zoom in"
+                z=0
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

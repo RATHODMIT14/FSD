@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a" placeholder="ENTER">
+    <button onclick="saveu()">Save</button>
+    <button onclick="ps">ADMIN</button>
+    <input type="password" id="ps" placeholder="ENTER PASSWORD" onclick="ad()">
+    <button onclick="Showu()">Show</button>
+    <button onclick="Clearu()">Clear</button>
+    <p id="demo"></p>
+
+    <script>
+        function saveu(){
+            let data=document.getElementById('a').value
+            let users=JSON.parse(localStorage.getItem("users"))||[]
+            users.push(data)
+            localStorage.setItem('users',JSON.stringify(users))
+            document.getElementById('demo').innerHTML='DATA SAVED SUCCESSFULLY'
+        }
+        function Showu(){
+            let users=JSON.parse(localStorage.getItem("users"))||[]
+            document.getElementById('demo').innerHTML="USERS :<br>"+users.join("<br>")
+        }
+        function Clearu(){
+            localStorage.clear()
+            sessionStorage.clear()
+            document.getElementById('demo').innerHTML='ALL CLEAR'
+        }
+        function ad(){
+            
+        }
+    </script>
+</body>
+</html>

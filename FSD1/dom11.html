@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="fun()" id="a">Hello</p>
+    <P class="b">Hello</P>
+    <P class="b">Hii</P>
+    <button onclick="fun4()">Click</button>
+    <script>
+        function fun(){
+            let i=document.querySelector('#a')
+            i.innerHTML="<b>Welcome 2K26<b>"
+        }
+        function fun2(){
+            let i=document.getElementsByClassName('b')
+            i[0].innerHTML="How are you?"
+            for(let p of i){
+                p.innerHTML="How are you"
+            }
+        }
+        function fun3(){
+            let i=document.querySelectorAll(".b")
+            for(let p of i){
+                p.innerHTML="How are you?"
+            }
+        }
+
+        function fun4(){
+            let i=document.querySelectorAll(".b")
+            for(let p of i){
+                p.style.color='tomato'
+                p.style.backgroundColor='cyan'
+                p.innerHTML="WLECOME 2k26"
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

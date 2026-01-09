@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        USER NAME :<input type="text"  id="t2">
+        PASSWORD :<input type="password" id="p1">
+        <input type="submit" onsubmit="uname()">
+    </form>
+    <script>
+        function uname(){
+            un=/{3,}+.?/
+            pas=/\W+{6,}/
+            u=document.getElementById('t2').value
+            p=document.getElementById('p1').value
+            if(un.test(u)){
+                alert("Perfect  "+u)
+            }
+            else{
+                alert('Enter Peroper value')
+            }
+            if(pas.test(p)){
+                alert("Perfect  "+p)
+            }
+            else{
+                alert('Enter Peroper value')
+            }
+        }
+    </script>
+</body>
+</html>
